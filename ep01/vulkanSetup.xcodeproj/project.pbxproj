@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		FB2DAF88297C505D007E76BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB2DAF87297C505D007E76BD /* main.cpp */; };
+		FBB0B23F297EC4A60006D065 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB0B23E297EC4A60006D065 /* libglfw.3.3.dylib */; };
+		FBB0B242297EC4B30006D065 /* libvulkan.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB0B240297EC4B30006D065 /* libvulkan.1.dylib */; };
+		FBB0B243297EC4B30006D065 /* libvulkan.1.3.236.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB0B241297EC4B30006D065 /* libvulkan.1.3.236.dylib */; };
+		FBB0B244297EC4BD0006D065 /* libvulkan.1.3.236.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBB0B241297EC4B30006D065 /* libvulkan.1.3.236.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FBB0B245297EC4BD0006D065 /* libvulkan.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBB0B240297EC4B30006D065 /* libvulkan.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FBB0B246297EC4BD0006D065 /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBB0B23E297EC4A60006D065 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FBB0B24B297EC6C00006D065 /* lve_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB0B249297EC6C00006D065 /* lve_window.cpp */; };
+		FBB0B250297ECFF20006D065 /* first_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB0B24F297ECFF20006D065 /* first_app.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -17,6 +25,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FBB0B244297EC4BD0006D065 /* libvulkan.1.3.236.dylib in CopyFiles */,
+				FBB0B245297EC4BD0006D065 /* libvulkan.1.dylib in CopyFiles */,
+				FBB0B246297EC4BD0006D065 /* libglfw.3.3.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,6 +39,14 @@
 		FB447AC9297C53D40044CC72 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		FB447ACB297C560C0044CC72 /* libvulkan.1.3.236.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.3.236.dylib; path = ../../../../../Users/paul.sohns/VulkanSDK/1.3.236.0/macOS/lib/libvulkan.1.3.236.dylib; sourceTree = "<group>"; };
 		FB447ACD297C56170044CC72 /* libvulkan.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.dylib; path = ../../../../../Users/paul.sohns/VulkanSDK/1.3.236.0/macOS/lib/libvulkan.1.dylib; sourceTree = "<group>"; };
+		FBB0B23E297EC4A60006D065 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		FBB0B240297EC4B30006D065 /* libvulkan.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.dylib; path = ../../../../../../Users/paul.sohns/VulkanSDK/1.3.236.0/macOS/lib/libvulkan.1.dylib; sourceTree = "<group>"; };
+		FBB0B241297EC4B30006D065 /* libvulkan.1.3.236.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.3.236.dylib; path = ../../../../../../Users/paul.sohns/VulkanSDK/1.3.236.0/macOS/lib/libvulkan.1.3.236.dylib; sourceTree = "<group>"; };
+		FBB0B249297EC6C00006D065 /* lve_window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lve_window.cpp; sourceTree = "<group>"; };
+		FBB0B24A297EC6C00006D065 /* lve_window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lve_window.hpp; sourceTree = "<group>"; };
+		FBB0B24D297ECA3F0006D065 /* first_app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = first_app.hpp; sourceTree = "<group>"; };
+		FBB0B24F297ECFF20006D065 /* first_app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = first_app.cpp; sourceTree = "<group>"; };
+		FBB0B252297ED5C10006D065 /* simple_shader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = simple_shader.vert; sourceTree = "<group>"; wrapsLines = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB0B23F297EC4A60006D065 /* libglfw.3.3.dylib in Frameworks */,
+				FBB0B242297EC4B30006D065 /* libvulkan.1.dylib in Frameworks */,
+				FBB0B243297EC4B30006D065 /* libvulkan.1.3.236.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +83,12 @@
 		FB2DAF86297C505D007E76BD /* vulkanSetup */ = {
 			isa = PBXGroup;
 			children = (
+				FBB0B251297ED5780006D065 /* shader */,
 				FB2DAF87297C505D007E76BD /* main.cpp */,
+				FBB0B249297EC6C00006D065 /* lve_window.cpp */,
+				FBB0B24A297EC6C00006D065 /* lve_window.hpp */,
+				FBB0B24D297ECA3F0006D065 /* first_app.hpp */,
+				FBB0B24F297ECFF20006D065 /* first_app.cpp */,
 			);
 			path = vulkanSetup;
 			sourceTree = "<group>";
@@ -69,11 +96,22 @@
 		FB447AC8297C53D30044CC72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBB0B241297EC4B30006D065 /* libvulkan.1.3.236.dylib */,
+				FBB0B240297EC4B30006D065 /* libvulkan.1.dylib */,
+				FBB0B23E297EC4A60006D065 /* libglfw.3.3.dylib */,
 				FB447ACD297C56170044CC72 /* libvulkan.1.dylib */,
 				FB447ACB297C560C0044CC72 /* libvulkan.1.3.236.dylib */,
 				FB447AC9297C53D40044CC72 /* libglfw.3.3.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBB0B251297ED5780006D065 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				FBB0B252297ED5C10006D065 /* simple_shader.vert */,
+			);
+			path = shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB0B250297ECFF20006D065 /* first_app.cpp in Sources */,
 				FB2DAF88297C505D007E76BD /* main.cpp in Sources */,
+				FBB0B24B297EC6C00006D065 /* lve_window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
