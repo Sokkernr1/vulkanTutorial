@@ -39,6 +39,8 @@
 		FB447AC9297C53D40044CC72 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		FB447ACB297C560C0044CC72 /* libvulkan.1.3.236.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.3.236.dylib; path = ../../../../../Users/paul.sohns/VulkanSDK/1.3.236.0/macOS/lib/libvulkan.1.3.236.dylib; sourceTree = "<group>"; };
 		FB447ACD297C56170044CC72 /* libvulkan.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.dylib; path = ../../../../../Users/paul.sohns/VulkanSDK/1.3.236.0/macOS/lib/libvulkan.1.dylib; sourceTree = "<group>"; };
+		FB6358C6297EDCD8008E416F /* simple_shader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = simple_shader.frag; sourceTree = "<group>"; };
+		FB6358C7297EDE47008E416F /* compileShader.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = compileShader.sh; sourceTree = "<group>"; };
 		FBB0B23E297EC4A60006D065 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		FBB0B240297EC4B30006D065 /* libvulkan.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.dylib; path = ../../../../../../Users/paul.sohns/VulkanSDK/1.3.236.0/macOS/lib/libvulkan.1.dylib; sourceTree = "<group>"; };
 		FBB0B241297EC4B30006D065 /* libvulkan.1.3.236.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.3.236.dylib; path = ../../../../../../Users/paul.sohns/VulkanSDK/1.3.236.0/macOS/lib/libvulkan.1.3.236.dylib; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				FBB0B24A297EC6C00006D065 /* lve_window.hpp */,
 				FBB0B24D297ECA3F0006D065 /* first_app.hpp */,
 				FBB0B24F297ECFF20006D065 /* first_app.cpp */,
+				FB6358C7297EDE47008E416F /* compileShader.sh */,
 			);
 			path = vulkanSetup;
 			sourceTree = "<group>";
@@ -110,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB0B252297ED5C10006D065 /* simple_shader.vert */,
+				FB6358C6297EDCD8008E416F /* simple_shader.frag */,
 			);
 			path = shader;
 			sourceTree = "<group>";
