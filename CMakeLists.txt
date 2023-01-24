@@ -7,12 +7,12 @@ project(${PROJECT_NAME})
 set(CMAKE_CXX_STANDARD 20)
 
 include_directories(
-        /usr/local/include
-        ${VULKAN_SDK_PATH}/include
+    /usr/local/include
+    ${VULKAN_SDK_PATH}/include
 )
 link_directories(
-        /usr/local/lib
-        ${VULKAN_PATH}/lib
+    /usr/local/lib
+    ${VULKAN_PATH}/lib
 )
 
 FILE(GLOB_RECURSE SOURCE_FILES src/*.cpp)
