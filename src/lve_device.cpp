@@ -83,6 +83,7 @@ void LveDevice::createInstance() {
 
   VkInstanceCreateInfo createInfo = {};
   createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
+  createInfo.flags |= VK_INSTANCE_CREATE_ENUMERATE_PORTABILITY_BIT_KHR;
   createInfo.pApplicationInfo = &appInfo;
 
   auto extensions = getRequiredExtensions();
@@ -266,6 +267,10 @@ std::vector<const char *> LveDevice::getRequiredExtensions() {
   glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
 
   std::vector<const char *> extensions(glfwExtensions, glfwExtensions + glfwExtensionCount);
+
+  extensions.push_back(VK_KHR_PORTABILITY_ENUMERATION_EXTENSION_NAME);
+  //extensions.push_back("VK_KHR_portability_enumeration");
+  extensions.push_back("VK_KHR_get_physical_device_properties2");
 
   if (enableValidationLayers) {
     extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);
